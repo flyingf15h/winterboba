@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Boba Drops</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('background.png') no-repeat center center/cover;
+        }
+        .content {
+            text-align: center;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img id="blahajImage" src="christmas blahaj.png" alt="Christmas Blahaj">
+        <br>
+        <button id="giveBobaButton">Give Boba</button>
+    </div>
+
+    <script>
+        const button = document.getElementById('giveBobaButton');
+        const image = document.getElementById('blahajImage');
+
+        button.addEventListener('click', () => {
+            image.src = 'christmas_haj.gif';
+            button.disabled = true;
+            setTimeout(() => {
+                button.disabled = false;
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
