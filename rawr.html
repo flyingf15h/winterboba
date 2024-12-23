@@ -1,29 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winter Boba Drops</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="content">
-        <img id="blahajImage" src="christmas blahaj.png" alt="Christmas Blahaj" class="scaled-img">
-        <br>
-        <button id="giveBobaButton">Give Boba</button>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Winter Boba Drops</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="content">
+            <img id="blahajImage" src="christmas_haj.gif" alt="Christmas Blahaj" class="scaled-img">
+            <br>
+        </div>
 
-    <script>
-        const button = document.getElementById('giveBobaButton');
-        const image = document.getElementById('blahajImage');
-
-        button.addEventListener('click', () => {
-            image.src = 'christmas_haj.gif';
-            button.disabled = true;
-            setTimeout(() => {
-                button.disabled = false;
-            }, 2500);
-        });
-    </script>
-</body>
+    </body>
 </html>
