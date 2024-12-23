@@ -14,8 +14,14 @@ body {
 .scaled-img {
     max-width: 500px;
     height: auto;
+    display: block; 
 }
-
+.text {
+    color: #3cb3bb;
+    margin: 0 auto; 
+    font-family: "roboto", monospace; 
+    display: block; 
+}
 .snow {
     position: absolute;
     top: 0;
